@@ -220,6 +220,6 @@ def cluster_get_stats(conn):
 
 
 def cluster_get_fielddata_stats(conn):
-    path = "_stats/fielddata"
+    path = "/_nodes/stats/indices/?fields"
     resp = conn.get(path)
     return resp
